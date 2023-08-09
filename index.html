@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | QR code component</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f3f4f6;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        width: 320px;
+        background-color: #e5e7eb;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .qr-code {
+        border: 2px solid #000;
+        border-radius: 1.5rem;
+        overflow: hidden;
+      }
+      .qr-code img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .text {
+        text-align: center;
+      }
+      .text-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      .text-description {
+        color: #6b7280;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="qr-code">
+        <img src="../images/image-qr-code.png" alt="QR Code" />
+      </div>
+      <div class="text">
+        <p class="text-title">
+          Improve your front-end skills by building projects
+        </p>
+        <p class="text-description">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </div>
+    <div class="attribution space-x-2">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://manthan77.netlify.app/">Manthan Kumar</a>.
+    </div>
+  </body>
+</html>
